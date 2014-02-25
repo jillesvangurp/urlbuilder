@@ -20,18 +20,30 @@ Use a static import: `import static com.github.jillesvangurp.urlbuilder.UrlBuild
             is("http://localhost:80?yes=true&number=42&str=1&str=2&dontescape=:-)"));
     
 
-# Installation
+# Get it from Maven Central
+
+```
+<dependency>
+    <groupId>com.jillesvangurp</groupId>
+    <artifactId>urlbuilder</artifactId>
+    <version>1.1</version>
+</dependency>
+```
+
+Note. check for the latest version. I do not always update the readme.
+
+# Building
 
 It's a maven project. So, checking it out and doing a mvn clean install should do the trick.
-
-Alternatively, you can exercise your rights under the license and simply copy and adapt. The [license](https://github.com/jillesvangurp/urlbuilder/blob/master/LICENSE) allows you to do this and I have no problems with this.
-
-If you like to use pre-built jars, you can utilize my private maven repository as explained [here](http://www.jillesvangurp.com/2013/02/27/maven-and-my-github-projects/)
 
 Should anyone like this licensed differently, please contact me.
 
 If anyone wants to fix stuff just send me a pull request.
 
+Alternatively, you can exercise your rights under the license and simply copy and adapt. The [license](https://github.com/jillesvangurp/urlbuilder/blob/master/LICENSE) allows you to do this and I have no problems with this.
+
 # Changelog
+* 1.1
+    * deployed to maven central 
 * 1.0
     * first release
