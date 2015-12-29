@@ -22,4 +22,8 @@ public class UrlBuilderTest {
                 url("localhost", 80).queryParam("yes", true).queryParam("number", 42).queryParam("str", "1").queryParam("str", "2")
                         .queryParam("dontescape", ":-)", false).build(), is("http://localhost:80?yes=true&number=42&str=1&str=2&dontescape=:-)"));
     }
+
+    public void shouldSupportRelativePaths() {
+        assertThat(url("/").append("foo").queryParam("bar", "foo").build(), is("/foo?bar=foo"));
+    }
 }
