@@ -27,7 +27,6 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.LinkedList;
 import java.util.Map.Entry;
-
 import org.apache.commons.lang.StringUtils;
 
 /**
@@ -46,7 +45,7 @@ public class UrlBuilder {
     }
 
     /**
-     * @param baseUrl
+     * @param baseUrl baseUrl
      * @return builder for the baseUrl
      */
     public static UrlBuilder url(String baseUrl) {
@@ -54,8 +53,8 @@ public class UrlBuilder {
     }
 
     /**
-     * @param host
-     * @param port
+     * @param host host
+     * @param port port
      * @return builder for http://[host]:[port]
      */
     public static UrlBuilder url(String host, int port) {
@@ -94,7 +93,7 @@ public class UrlBuilder {
 
     /**
      * Appends one or more postfixes and separates them by slashes. Note, prefixes are url encoded, so don't include the actual slashes.
-     * @param postFix
+     * @param postFix postFix
      * @return the builder.
      */
     public UrlBuilder append(String... postFix) {
@@ -130,7 +129,7 @@ public class UrlBuilder {
     /**
      * Create a query parameter with a boolean value.
      * @param name parameter name
-     * @param value
+     * @param value value
      * @return the builder
      */
     public UrlBuilder queryParam(String name, Boolean value) {
@@ -144,7 +143,7 @@ public class UrlBuilder {
     /**
      * Create a query parameter with a number value.
      * @param name parameter name
-     * @param value
+     * @param value value
      * @return the builder
      */
     public UrlBuilder queryParam(String name, Number value) {
@@ -157,8 +156,8 @@ public class UrlBuilder {
 
     /**
      * Create a query parameter with a String value. The value will be urlencoded.
-     * @param name
-     * @param value
+     * @param name name
+     * @param value value
      * @return the builder
      */
     public UrlBuilder queryParam(String name, String value) {
@@ -167,8 +166,8 @@ public class UrlBuilder {
 
     /**
      * Create a query parameter with a String value.
-     * @param name
-     * @param value
+     * @param name name
+     * @param value value
      * @param encode if true, the value is urlencoded.
      * @return the builder
      */
